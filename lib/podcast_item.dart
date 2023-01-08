@@ -41,11 +41,18 @@ class PodcastItem extends StatelessWidget {
                   ),
                 ),
                 // Icon(Icons.favorite_border_outlined),
+                // IconButton(
+                //   onPressed: () {},
+                //   icon: const Icon(
+                //     Icons.favorite,
+                //     color: Color.fromARGB(255, 253, 184, 23),
+                //   ),
+                // ),
                 IconButton(
                   onPressed: () {},
                   icon: const Icon(
-                    Icons.favorite,
-                    color: Color.fromARGB(255, 253, 184, 23),
+                    Icons.highlight_remove_rounded,
+                    color: Colors.red,
                   ),
                 ),
               ],
@@ -55,7 +62,7 @@ class PodcastItem extends StatelessWidget {
       ),
       onTap: () {
         Navigator.push(
-          context,
+          context, 
           MaterialPageRoute(builder: (context) => DetailPodcast())
         );
       },

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:podcasts/favorite.dart';
 import 'package:podcasts/home.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class _MainState extends State<Main> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+      home: Favorite(),
     );
   }
 }
